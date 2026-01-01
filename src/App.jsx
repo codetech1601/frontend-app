@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { getHello } from './api'
 import { getHello2 } from './api2'
+import UserForm from './UserForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,7 +31,10 @@ function App() {
     <div>  
         <h3>{message2}</h3>
     </div>
-  
+ 
+<h1>User Registration</h1> 
+<UserForm />
+
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -55,4 +59,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
