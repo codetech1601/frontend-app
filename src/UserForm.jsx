@@ -9,7 +9,7 @@ const [password,setPassword]=useState("");
 const handleSubmit=async (e)=>{
 e.preventDefault();
 
-const response = await fetch("http://localhost:8080/save",
+const response = await fetch("https://backend-app-kffz.onrender.com/save",
   {
     method: "POST",
     headers:{
